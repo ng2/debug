@@ -9,7 +9,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js"
+    "index.js",
+    "config.js",
+    "providers/debug.js"
   ],
   "styles": []
 }
