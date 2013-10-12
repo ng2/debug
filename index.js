@@ -2,5 +2,5 @@
 
 var app = angular.module('ng2Debug', ['ngRoute']);
 
-require('./providers/debug');
+require('./providers/events');
 require('./config');

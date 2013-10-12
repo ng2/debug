@@ -1,5 +1,5 @@
 angular.module('ng2Debug')
-.run(['Debug'
-  , function (Debug) {
+.run(['DebugEvents'
+  , function (DebugEvents) {
 
 }]);

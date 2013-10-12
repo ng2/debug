@@ -11,7 +11,7 @@
   "scripts": [
     "index.js",
     "config.js",
-    "providers/debug.js"
+    "providers/events.js"
   ],
   "styles": []
 }

@@ -1,20 +1,20 @@
 /**
 * @ngdoc service
-* @name ng2Debug.providers:debugProvider
+* @name ng2Debug.providers:EventsProvider
 * @description
 * Provider configuration docs.
 */
 
 /**
 * @ngdoc service
-* @name ng2Debug.services:debug
+* @name ng2Debug.services:Events
 * @description
 * Service consumption docs.
 */
 
 angular
 .module('ng2Debug')
-.provider('Debug', function () {
+.provider('DebugEvents', function () {
   var verbosity = 'v';
   var listeners = [];
   /**
