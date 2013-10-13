@@ -1,9 +1,9 @@
 {
   "name": "ng2Debug",
   "repo": "ng2/debug",
-  "description": "",
-  "version": "0.0.1",
-  "keywords": [],
+  "description": "A drop-in debug module for AngularJS",
+  "version": "0.0.2",
+  "keywords": ["ng2", "ng2/debug", "debug", "ng2Debug"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
