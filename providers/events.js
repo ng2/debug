@@ -15,8 +15,9 @@
 angular
 .module('ng2Debug')
 .provider('DebugEvents', function () {
-  var verbosity = '';
-  var listeners = [];
+  var verbosity = ''
+    , filter = false
+    , listeners = [];
   /**
    * @description
    * The actual service.
@@ -29,6 +30,9 @@ angular
     $get: ['$rootScope', '$timeout', function ($rootScope, $timeout) {
       var debug = function (eventName, type) {
         return function (event, data) {
+          if(filter && !filter.test(eventName)) {
+            return;
+          }
           var prefix = "debug:event::"+type;
           switch(verbosity.length) {
             case 0: break;
@@ -109,6 +113,10 @@ angular
 
       return {};
     }],
+
+    setFilter: function (string, opts) {
+      filter = new RegExp(string, opts || 'ig');
+    },
 
     setVerbosityLevel: function (level) {
       verbosity = level;
