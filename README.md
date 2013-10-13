@@ -5,10 +5,12 @@
 
 `component install ng2/debug`
 
-Then require it in your `index.html`:
+Then require it in your `index.html` and add it as a dependency:
 
 ```
 require('ng2-debug');
+//...
+angular.module('myApp',['ng2Debug']);
 ```
 
 And configure any of the debuggers in your `.config` block.
