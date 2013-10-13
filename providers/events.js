@@ -15,7 +15,7 @@
 angular
 .module('ng2Debug')
 .provider('DebugEvents', function () {
-  var verbosity = 'v';
+  var verbosity = '';
   var listeners = [];
   /**
    * @description
