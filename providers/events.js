@@ -27,7 +27,9 @@ angular
     /**
      * Inject services used within your service here
      */
-    $get: ['$rootScope', '$timeout', function ($rootScope, $timeout) {
+    $get: ['$rootScope', '$timeout', '$injector',
+     function ($rootScope, $timeout, $injector) {
+
       var debug = function (eventName, type) {
         return function (event, data) {
           if(filter && !filter.test(eventName)) {
@@ -81,7 +83,7 @@ angular
             try {
               listeners[i].apply(null, listenerArgs);
             } catch(e) {
-              $exceptionHandler(e);
+              $injector.get('$exceptionHandler')(e);
             }
           }
 
