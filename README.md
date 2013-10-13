@@ -7,7 +7,7 @@
 
 Then require it in your `index.html` and add it as a dependency:
 
-```
+```js
 require('ng2-debug');
 //...
 angular.module('myApp',['ng2Debug']);
@@ -15,7 +15,7 @@ angular.module('myApp',['ng2Debug']);
 
 And configure any of the debuggers in your `.config` block.
 
-```
+```js
 .config( function(DebugEventsProvider) {
   DebugEventsProvider.setVerbosityLevel('vv');
 });
