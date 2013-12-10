@@ -38,3 +38,6 @@ It exposes just one function at the moment: `setVerbosityLevel`.
 ### setFilter ( string, opts )
 > Filters the output by creating a RegExp object with string and opts.
 > opts defaults to 'ig'
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ng2/debug/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
